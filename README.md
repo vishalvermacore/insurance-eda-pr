@@ -1,6 +1,6 @@
-# Insurance EDA Project 📊
+# Insurance EDA & Linear Regression Project 📊
 
-This project focuses on Exploratory Data Analysis (EDA) and data preprocessing using a healthcare insurance dataset. The main goal of this project was to analyze patterns, trends, and relationships in the data using Python and visualization libraries.
+This project focuses on Exploratory Data Analysis (EDA), data preprocessing, and Machine Learning using a healthcare insurance dataset. The main objective of this project is to analyze patterns, trends, and relationships in the data and build a Linear Regression model to predict medical insurance charges.
 
 ---
 
@@ -13,9 +13,15 @@ In this project, I performed:
 - Data Visualization
 - Feature Understanding
 - Pattern & Trend Analysis
+- Feature Encoding
+- Linear Regression Model Building
+- Model Training & Testing
+- Model Evaluation
 
 The dataset contains information related to:
+
 - Age
+- Gender
 - BMI
 - Smoking habits
 - Region
@@ -31,7 +37,39 @@ The dataset contains information related to:
 - NumPy
 - Matplotlib
 - Seaborn
+- Scikit-learn
 - Jupyter Notebook
+
+---
+
+# Dataset Information
+
+The dataset includes the following features:
+
+| Feature | Description |
+|--------|-------------|
+| age | Age of the person |
+| sex | Gender of the person |
+| bmi | Body Mass Index |
+| children | Number of children/dependents |
+| smoker | Smoking status |
+| region | Residential area |
+| charges | Medical insurance charges |
+
+---
+
+# Exploratory Data Analysis (EDA)
+
+During EDA, various visualizations and analyses were performed to understand the dataset.
+
+## Analysis Performed
+
+- Correlation Analysis
+- Distribution Analysis
+- Outlier Detection
+- Categorical Feature Analysis
+- Relationship Between Features
+- Insurance Charge Analysis
 
 ---
 
@@ -40,9 +78,48 @@ The dataset contains information related to:
 Some important insights discovered during analysis:
 
 - Smoking significantly increases insurance charges
-- BMI shows correlation with medical expenses
-- Data visualization helps identify trends and outliers
-- Age and lifestyle factors impact insurance costs
+- BMI has a positive correlation with medical expenses
+- Age affects insurance costs
+- Smokers are charged much higher compared to non-smokers
+- Data visualization helps identify patterns and outliers
+- Lifestyle factors strongly influence medical insurance charges
+
+---
+
+# Data Preprocessing
+
+The following preprocessing steps were performed:
+
+- Handling missing values
+- Label Encoding categorical columns
+- Feature selection
+- Splitting data into training and testing sets
+
+---
+
+# Machine Learning Model
+
+After completing EDA and preprocessing, a Linear Regression model was built to predict insurance charges.
+
+## Model Workflow
+
+1. Import dataset
+2. Encode categorical variables
+3. Split dataset into train and test data
+4. Train Linear Regression model
+5. Predict insurance charges
+6. Evaluate model performance
+
+---
+# Model Evaluation Metrics
+
+The model was evaluated using:
+
+- Mean Absolute Error (MAE)
+- Mean Squared Error (MSE)
+- R² Score
+
+These metrics help measure the accuracy and performance of the regression model.
 
 ---
 
@@ -58,11 +135,16 @@ insurance-eda-project/
 │   └── insurance_eda_analysis.ipynb
 │
 ├── images/
+│   ├── correlation_heatmap.png
+│   ├── smoker_count.png
+│   ├── gender_distribution.png
+│   └── bmi_distribution.png
+│
+├── models/
+│   └── linear_regression_model.pkl
 │
 ├── README.md
-│
 ├── requirements.txt
-│
 └── .gitignore
 ```
 
@@ -97,8 +179,11 @@ insurance-eda-project/
 # Future Improvements
 
 - Feature Engineering
-- Machine Learning Model Building
-- Dashboard Development
+- Hyperparameter Tuning
+- Advanced Regression Models
+- Model Deployment
+- Streamlit Dashboard
+- Flask Web Application
 - Advanced Statistical Analysis
 
 ---
@@ -111,6 +196,13 @@ This project helped strengthen my understanding of:
 - Exploratory Data Analysis (EDA)
 - Data Visualization
 - Data Preprocessing
+- Machine Learning
+- Regression Modeling
+- Model Evaluation Techniques
 - Working with real-world datasets
 
 ---
+
+# Conclusion
+
+This project demonstrates how Exploratory Data Analysis and Machine Learning techniques can be applied to healthcare insurance datasets to uncover valuable insights and predict insurance charges effectively using Linear Regression.
